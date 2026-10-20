@@ -1,0 +1,175 @@
+/* ---------- 2. BASE ---------- */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #1f2a44;
+  /* Espacio para que el navbar fijo no tape el contenido */
+  padding-top: 70px;
+}
+
+/* ---------- 3. NAVBAR ---------- */
+.bg-construarte {
+  background-color: #0b2447;
+}
+
+.navbar .nav-link {
+  font-size: 14px;
+  padding-inline: 14px;
+}
+
+/* Enlace de la página actual resaltado en amarillo */
+.navbar .nav-link.active {
+  color: #ffc928;
+  font-weight: 500;
+}
+
+/* Logo */
+.logo-icono {
+  font-size: 32px;
+  color: #ffc928;
+}
+
+.logo-texto {
+  font-size: 19px;
+  color: #fff;
+}
+
+.logo-lema {
+  font-size: 10px;
+  color: #cbd5e1;
+}
+
+.text-amarillo {
+  color: #ffc928;
+}
+
+/* ---------- 4. HERO / BANNER ---------- */
+
+.hero-inicio {
+  min-height: 280px;
+  /* Degradado oscuro encima de la imagen para que el texto se lea bien */
+  background:
+    linear-gradient(90deg, rgba(11, 36, 71, 0.85), rgba(11, 36, 71, 0.35)),
+    url('../img/banner-inicio.jpg') center / cover no-repeat;
+}
+
+
+.hero-nosotros {
+  min-height: 280px;
+  /* Degradado oscuro encima de la imagen para que el texto se lea bien */
+  background:
+    linear-gradient(90deg, rgba(11, 36, 71, 0.85), rgba(11, 36, 71, 0.35)),
+    url('../img/banner-nosotros.jpg') center / cover no-repeat;
+}
+
+.hero-contacto {
+  min-height: 280px;
+  /* Degradado oscuro encima de la imagen para que el texto se lea bien */
+  background:
+    linear-gradient(90deg, rgba(11, 36, 71, 0.85), rgba(11, 36, 71, 0.35)),
+    url('../img/banner-contacto.png') center / cover no-repeat;
+}
+
+.hero-servicios {
+  min-height: 280px;
+  /* Degradado oscuro encima de la imagen para que el texto se lea bien */
+  background:
+    linear-gradient(90deg, rgba(11, 36, 71, 0.85), rgba(11, 36, 71, 0.35)),
+    url('../img/banner-servicios.jpg') center / cover no-repeat;
+}
+
+.hero-pintura {
+  min-height: 280px;
+  /* Degradado oscuro encima de la imagen para que el texto se lea bien */
+  background:
+    linear-gradient(90deg, rgba(11, 36, 71, 0.85), rgba(11, 36, 71, 0.35)),
+    url('../img/banner-pintura.png') center / cover no-repeat;
+}
+
+
+
+/* ---------- 5. TÍTULOS DE SECCIÓN ---------- */
+.titulo-seccion {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0b2447;
+  margin-bottom: 16px;
+}
+
+/* ---------- 6. MISIÓN / VISIÓN / VALORES ---------- */
+/* Círculo amarillo que contiene el ícono */
+.icono-circulo {
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background-color: #e6b41f;
+  color: #0b2447;
+  font-size: 21px;
+}
+
+/* Valores separados por un punto: Compromiso · Calidad · ... */
+.lista-valores {
+  margin-right: 13px;
+  color: #0b2447;
+}
+
+/* ---------- 7. EQUIPO ---------- */
+.tarjeta-equipo img {
+  width: 100%;
+  aspect-ratio: 1 / 1.1;
+  /* Mantiene todas las fotos del mismo tamaño */
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease;
+}
+
+.tarjeta-equipo img:hover {
+  transform: translateY(-4px);
+}
+
+/* ---------- 8. LLAMADA A LA ACCIÓN (CTA) ---------- */
+.cta-construarte {
+  background-color: #1f2a44;
+}
+
+/* Botón amarillo (reutilizable en todas las páginas) */
+.btn-amarillo {
+  background-color: #ffc928;
+  color: #0b2447;
+  border: none;
+  padding: 0.55rem 1.6rem;
+  border-radius: 6px;
+}
+
+.btn-amarillo:hover {
+  background-color: #e6b41f;
+  color: #0b2447;
+}
+
+/* ---------- 9. FOOTER ---------- */
+footer a {
+  color: #cbd5e1;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffc928;
+}
+
+/* ---------- 10. RESPONSIVE ---------- */
+@media (min-width: 992px) {
+  .hero-nosotros {
+    min-height: 360px;
+  }
+}
+
+
+
+/* agg por JReina: Forzar que los textos y títulos dentro de las tarjetas usen el mismo color */
+.card-body,
+.card-title,
+.card-text {
+  color: #1f2a44;
+}

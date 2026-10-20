@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Conoce la historia, misión, visión, valores y equipo de ConstruArte, empresa de pintura y acabados de calidad.">
+  <title>Servicio de Pintura | ConstruArte</title>
+
+  <!-- Bootstrap 5 (CSS) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons (íconos de misión, visión, valores y redes) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Fuente Roboto (Google Fonts) -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <!-- Nuestros estilos (se cargan DESPUÉS de Bootstrap para poder sobrescribirlo) -->
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+  <!--1. ENCABEZADO + MENÚ DE NAVEGACIÓN (igual en todas las páginas)-->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-construarte fixed-top" aria-label="Navegación principal">
+      <div class="container">
+
+        <!-- Logo de la empresa -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="img/logo-nav.png" width="60" alt="Logo Construarte">
+          <span class="lh-1">
+            <strong class="logo-texto">Constru<span class="text-amarillo">Arte</span></strong><br>
+            <small class="logo-lema">Construimos tus ideas</small>
+          </span>
+        </a>
+
+        <!-- Botón hamburguesa (solo en pantalla pequeña o movil) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+          aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Enlaces del menú -->
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+            <!-- Página actual: se marca con "active" y aria-current -->
+            <li class="nav-item"><a class="nav-link active" href="pintura.html" aria-current="page">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--CONTENIDO PRINCIPAL -->
+  <main>
+
+    <!--2. HERO / BANNER: título de la pagina -->
+    <section class="hero-pintura d-flex align-items-center" aria-labelledby="titulo-hero">
+      <div class="container">
+        <h1 id="titulo-hero" class="display-4 fw-bold text-white">Nuestros proyectos</h1>
+        <p class="lead text-white-50 col-md-6 px-0">
+          Servicios según tus necesidades.
+        </p>
+      </div>
+    </section>
+
+
+    <!--. NUESTRO EQUIPO -->
+    <section class="mt-5 pb-5" aria-labelledby="titulo-equipo">
+      <div class="container">
+        <h1 id="titulo-equipo" class="titulo-seccion">Servicio de Pintura</h1>
+        <p class="text-muted">El proyecto que necesites, lo hacemos realidad</p>
+
+        <div class="row g-4 text-center">
+
+          <!-- Servicio Interior: <figure> + <figcaption> para foto con descripción -->
+          <div class="col-6 col-md-4">
+            <figure class="tarjeta-equipo m-0">
+              <img src="img/pintura-interior.webp" class="img-fluid rounded-3" alt="Pintura interior" loading="lazy">
+              <figcaption class="mt-2">
+                <strong class="d-block">Pintura de Interior</strong>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Servicio Fachada -->
+          <div class="col-6 col-md-4">
+            <figure class="tarjeta-equipo m-0">
+              <img src="img/pintura-fachada.jpg" class="img-fluid rounded-3" alt="Pintura Fachada" loading="lazy">
+              <figcaption class="mt-2">
+                <strong class="d-block">Pintura de Fachada</strong>
+
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Servicio Comercial -->
+          <div class="col-6 col-md-4 mx-auto">
+            <figure class="tarjeta-equipo m-0">
+              <img src="img/pintura-comercial.jpg" class="img-fluid rounded-3" alt="Pintura Comercial" loading="lazy">
+              <figcaption class="mt-2">
+                <strong class="d-block">Pintura Comercial</strong>
+              </figcaption>
+            </figure>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="container mt-2 mb-2">
+      <div class="row">
+
+        <article class="col-6 col-md-4">
+          <h2 class="titulo-seccion">Proceso de pintura</h2>
+          <ul>
+            <li>Visita y medición</li>
+            <li>Cotización</li>
+            <li>Preparación de Superficie</li>
+            <li>Aplicación</li>
+            <li>Entrega y revisión</li>
+          </ul>
+        </article>
+
+        <article class="col-6 col-md-4">
+          <h2 class="titulo-seccion">Tipos de pintura que ofrecemos</h2>
+          <ul>
+            <li>Pintura interior</li>
+            <li>Pintura exterior / fachadas</li>
+            <li>Pintura de oficinas y locales comerciales</li>
+
+          </ul>
+        </article>
+
+        <article class="col-6 col-md-4 mx-auto">
+          <h2 class="titulo-seccion">Las pinturas que usamos</h2>
+          <ul>
+            <li>Pintura plástica o látex</li>
+            <li>Pintura vinílica</li>
+            <li>Esmaltes al agua (acrílicos)</li>
+            <li>Esmaltes sintéticos (al disolvente)</li>
+            <li>Pintura antihongos</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+
+
+
+    <!--6. LLAMADA A LA ACCIÓN (CTA) -->
+    <section class="cta-construarte text-center py-5" aria-labelledby="titulo-cta">
+      <div class="container">
+        <h2 id="titulo-cta" class="h4 fw-bold text-white">¿Te gusta lo que ves?</h2>
+        <p class="text-white-50">Contáctanos para hacer realidad tu proyecto.</p>
+        <a href="contacto.html" class="btn btn-amarillo fw-bold">Contactar <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </section>
+
+  </main>
+
+  <!--7. PIE DE PÁGINA (igual en todas las páginas)-->
+  <footer class="bg-construarte text-white pt-5 pb-3">
+    <div class="container">
+      <div class="row gy-4">
+
+        <!-- Logo y redes sociales -->
+        <div class="col-md-4">
+
+          <!-- Logo de la empresa -->
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="img/logo-nav.png" width="60" alt="Logo Construarte">
+            <span class="lh-1">
+              <strong class="logo-texto">Constru<span class="text-amarillo">Arte</span></strong><br>
+              <small class="logo-lema">Construimos tus ideas</small>
+            </span>
+          </a>
+
+          <ul class="list-inline fs-5 mb-0">
+            <li class="list-inline-item"><a href="#" class="text-white" aria-label="Facebook"><i
+                  class="bi bi-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="text-white" aria-label="Instagram"><i
+                  class="bi bi-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="text-white" aria-label="YouTube"><i
+                  class="bi bi-youtube"></i></a></li>
+          </ul>
+        </div>
+
+        <!-- Enlaces a servicios -->
+        <nav class="col-6 col-md-4" aria-label="Servicios">
+          <h2 class="h6 fw-bold">Servicios</h2>
+          <ul class="list-unstyled small">
+            <li><a href="servicios.html">Pintura</a></li>
+            <li><a href="proximamente.html">Remodelaciones</a></li>
+            <li><a href="proximamente.html">Acabados</a></li>
+          </ul>
+        </nav>
+
+        <!-- Enlaces del sitio -->
+        <nav class="col-6 col-md-4" aria-label="Enlaces del sitio">
+          <h2 class="h6 fw-bold">Enlaces</h2>
+          <ul class="list-unstyled small">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="pintura.html">Proyectos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <hr class="border-secondary">
+      <p class="text-center small mb-0">© 2026 ConstruArte. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 (JavaScript) — necesario para el menú hamburguesa -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
